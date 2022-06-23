@@ -1,14 +1,4 @@
-import { gsap } from "gsap";
-// import { useRef, useEffect } from "react";
-
 function Hero() {
-  const onEnter = ({ currentTarget }) => {
-    gsap.to(currentTarget, { marginBottom: "300px" });
-  };
-
-  const onLeave = ({ currentTarget }) => {
-    gsap.to(currentTarget, { marginTop: "100px" });
-  };
   return (
     <div className='hero gs_reveal'>
       <h1 className='hero-heading mb-3'>Hi, my name is</h1>
