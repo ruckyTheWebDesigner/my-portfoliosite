@@ -458,11 +458,6 @@ input[type="text"]::after {
     color: var(--light-slate);
   }
 
-  .project-contents:hover {
-    /* margin-bottom: 5vh !important; */
-    /* transform: scaleY(1.5); */
-  }
-
   .get-in-touch h2 {
     font-size: clamp(40px, 5vw, 28px);
     color: var(--lightest-slate);

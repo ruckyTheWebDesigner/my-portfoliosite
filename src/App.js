@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import HomePage from "./Components/Homepage/HomePage";
 
 function App() {

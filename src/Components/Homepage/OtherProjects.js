@@ -1,5 +1,5 @@
 import React from "react";
-import { gsap } from "gsap";
+
 // import { useRef, useEffect } from "react";
 import OtherProject from "./OtherProject";
 import OtherprojectsNotes from "./OtherProjectNotes";
