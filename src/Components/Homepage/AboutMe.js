@@ -17,52 +17,52 @@ function AboutMe() {
       </div>
       <div className='about-content d-flex flex-column flex-md-row flex-lg-row'>
         <div className='about-body'>
-          <h6>
+          <p>
             Hello! My name is Rukewe and i enjoy creating things that live on
             the internet, My instrest in web development started in 2019 when i
             decided to try editing custom WordPress themes -- turns out to
             become a passion i enjoy!
-          </h6>
+          </p>
 
-          <h6>
+          <p>
             Fast-forward to today, and I’ve had the privilege of working at an
             advertising agency, a start-up, a huge corporation, and a
             student-led design studio. My main focus these days is building
             accessible, inclusive products and digital experiences at
             Upstatement for a variety of clients.
-          </h6>
+          </p>
 
-          <h6>
+          <p>
             Here are a few technologies that I've been working with recently:
-          </h6>
+          </p>
           <div>
             <Row>
               <Col>
                 <div className='d-flex'>
                   <MdPlayArrow className='green-text me-1' />
-                  <h6>Javascript (ES6+)</h6>
+                  <p>Javascript (ES6+)</p>
                 </div>
                 <div className='d-flex'>
                   <MdPlayArrow className='green-text me-1' />
-                  <h6>React JS</h6>
+                  <p>React JS</p>
                 </div>
                 <div className='d-flex'>
                   <MdPlayArrow className='green-text me-1' />
-                  <h6>Node.js</h6>
+                  <p>Node.js</p>
                 </div>
               </Col>
               <Col>
                 <div className='d-flex'>
                   <MdPlayArrow className='green-text me-1' />
-                  <h6>Javascript (ES6+)</h6>
+                  <p>Javascript (ES6+)</p>
                 </div>
                 <div className='d-flex'>
                   <MdPlayArrow className='green-text me-1' />
-                  <h6>React JS</h6>
+                  <p>React JS</p>
                 </div>
                 <div className='d-flex'>
                   <MdPlayArrow className='green-text me-1' />
-                  <h6>Node.js</h6>
+                  <p>Node.js</p>
                 </div>
               </Col>
             </Row>

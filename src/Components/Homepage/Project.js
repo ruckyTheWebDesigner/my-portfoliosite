@@ -1,21 +1,32 @@
 import { GoMarkGithub } from "react-icons/go";
-import { VscOpenPreview } from "react-icons/vsc";
+import { FiExternalLink } from "react-icons/fi";
 
 function Project(props) {
+  function openurl(url) {
+    window.open(url, "_blank");
+  }
   return (
     <div className=''>
-      <div className='project-header my-5'>
+      <div
+        className='project-header mt-5 mb-4'
+        onClick={() => openurl(props.url)}>
         <h5>
           Featured Project <hr />
         </h5>
 
-        <h4 className='project-title'>{props.title}</h4>
+        <h4 className='project-title mb-4'>{props.name}</h4>
+        <p>{props.description}</p>
       </div>
-      <h6>{props.description}</h6>
-      <h6 className='my-4'>{props.description2}</h6>
+
       <div className='d-flex mb-3'>
-        <GoMarkGithub className='project-icons' />
-        <VscOpenPreview className='ms-3 project-icons' />
+        <a href={props.github} target='_blank' rel='noreferrer'>
+          {" "}
+          <GoMarkGithub className='project-icons icons' />
+        </a>
+        <a href={props.url} target='_blank' rel='noreferrer'>
+          {" "}
+          <FiExternalLink className='ms-3 project-icons icons' />
+        </a>
       </div>
     </div>
   );

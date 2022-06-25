@@ -1,33 +1,51 @@
 const Otherprojectsinfo = [
   {
-    name: "Time Tracker",
+    name: "Movie App",
     description:
-      "A single web page to get back to work, built with React and styled-components.",
+      "A single web page to search and view movies infos with a search bar and a list of movies.",
     with: {
-      1: "React",
-      2: "Styled-components",
-      3: "Node.js",
+      1: "HTML",
+      2: "CSS",
+      3: "JavaScript",
     },
+    github: "https://github.com/ruckyTheWebDesigner/movie-app/tree/master",
+    url: "https://ruckythewebdesigner.github.io/movie-app/",
   },
   {
-    name: "Time Tracker",
+    name: "Password Generator",
     description:
-      "A single web page to get back to work, built with React and styled-components.",
+      "A password generator app to generate random and unique passwords.",
     with: {
-      1: "React",
-      2: "Styled-components",
-      3: "Node.js",
+      1: "HTML",
+      2: "CSS",
+      3: "JavaScript",
     },
+    github: "https://github.com/ruckyTheWebDesigner/password-generator",
+    url: "https://ruckythewebdesigner.github.io/password-generator/",
   },
   {
-    name: "Time Tracker",
+    name: "Testimonials UI",
     description:
-      "A single web page to get back to work, built with React and styled-components.",
+      "A testimonial UI that display different users testimonials at set interval.",
     with: {
-      1: "React",
-      2: "Styled-components",
-      3: "Node.js",
+      1: "HTML",
+      2: "CSS",
+      3: "JavaScript",
     },
+    github: "https://github.com/ruckyTheWebDesigner/testimonials-UI",
+    url: "https://ruckythewebdesigner.github.io/testimonials-UI/",
+  },
+  {
+    name: "Dad Jokes Generator",
+    description: "A simple UI app to generate random dad jokes.",
+    with: {
+      1: "HTML",
+      2: "CSS",
+      3: "JavaScript",
+      4: "jQuery",
+    },
+    github: "https://github.com/ruckyTheWebDesigner/Dad-jokes",
+    url: "https://ruckythewebdesigner.github.io/Dad-jokes/",
   },
 ];
 

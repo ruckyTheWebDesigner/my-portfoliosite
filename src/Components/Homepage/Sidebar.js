@@ -10,21 +10,21 @@ function Sidebar() {
       </div>
 
       <div className='sidebar-right'>
-        <a href='/' className='my-3'>
-          <FiTwitter />
+        <a href='/'>
+          <FiTwitter className='icons mb-4' />
         </a>
         <a href='/'>
-          <FiGithub />
+          <FiGithub className='icons' />
         </a>
       </div>
 
       <div className='footer'>
         <div className='footer-icons d-flex align-items-center justify-content-center'>
           <a href='/' className='my-2 mx-3'>
-            <FiTwitter />
+            <FiTwitter className='icons' />
           </a>
           <a href='/'>
-            <FiGithub />
+            <FiGithub className='icons' />
           </a>
         </div>
         <h6 className='text-center'>Designed & Built by Rukewe Joseph</h6>

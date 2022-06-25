@@ -6,21 +6,56 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import logo from "./Assets/Logo.png";
 
-export default function BasicCard() {
+function scrollToSection(id) {
+  const element = document.getElementById(id);
+  element.scrollIntoView({ behavior: "smooth" });
+}
+
+function DesktopNav() {
+  return (
+    <div className='navbar-desktop d-flex justify-content-between'>
+      <Link to='/'>
+        <img src={logo} className='green-text logo' alt='' srcset='' />
+      </Link>
+
+      <div className='right-nav  d-flex justify-content-between align-items-center'>
+        <Nav.Link
+          className='d-flex nav-link me-3 align-items-center'
+          onClick={() => scrollToSection("about-me")}>
+          <h5 className='green-text'>01.</h5>
+          <h4>About Me</h4>
+        </Nav.Link>
+        <Nav.Link
+          className='d-flex nav-link me-3 align-items-center'
+          href='#action2'
+          onClick={() => scrollToSection("projects")}>
+          <h5 className='green-text'>02.</h5>
+          <h4>Projects</h4>
+        </Nav.Link>
+        <Nav.Link
+          className='d-flex nav-link me-4 align-items-center'
+          href='#action2'
+          onClick={() => scrollToSection("contact-me")}>
+          <h5 className='green-text'>03.</h5>
+          <h4>Contact</h4>
+        </Nav.Link>
+        <button className='button btn-desktop '>Resume</button>
+      </div>
+    </div>
+  );
+}
+
+function MobileNav() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   function scrollToSection(id) {
-    setShow(false);
     const element = document.getElementById(id);
+    setShow(false);
     element.scrollIntoView({ behavior: "smooth" });
   }
-
-  useEffect(() => {
-    // scrollToAbout();
-  }, []);
 
   return (
     <>
@@ -33,36 +68,6 @@ export default function BasicCard() {
             className='green-text offcanvas-icon'
             onClick={handleShow}
           />
-        </div>
-      </div>
-
-      <div className='navbar-desktop px-5 d-flex justify-content-between'>
-        <Link to='/'>
-          <img src={logo} className='green-text logo' alt='' srcset='' />
-        </Link>
-
-        <div className='right-nav  d-flex justify-content-around align-items-center'>
-          <Nav.Link
-            className='d-flex nav-link mt-1'
-            onClick={() => scrollToSection("about-me")}>
-            <h5 className='green-text me-2'>01.</h5>
-            <h4>About Me</h4>
-          </Nav.Link>
-          <Nav.Link
-            className='d-flex nav-link me-2'
-            href='#action2'
-            onClick={() => scrollToSection("projects")}>
-            <h4 className='green-text me-2'>02.</h4>
-            <h4>Projects</h4>
-          </Nav.Link>
-          <Nav.Link
-            className='d-flex nav-link me-3'
-            href='#action2'
-            onClick={() => scrollToSection("contact-me")}>
-            <h4 className='green-text me-2'>03.</h4>
-            <h4>Contact</h4>
-          </Nav.Link>
-          <button className='button btn-desktop '>Resume</button>
         </div>
       </div>
 
@@ -95,4 +100,14 @@ export default function BasicCard() {
       </Offcanvas>
     </>
   );
+}
+
+export default function BasicCard() {
+  const resolution = window.innerWidth;
+
+  if (resolution > 768) {
+    return <DesktopNav />;
+  } else if (resolution < 768) {
+    return <MobileNav />;
+  }
 }

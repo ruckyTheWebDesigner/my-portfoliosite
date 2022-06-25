@@ -10,7 +10,7 @@ function Hero() {
         building accessible, human-centered products{" "}
         <span className='green-text'>that are easy to use.</span>
       </h6>
-      <button className='button'>Hire Me!!</button>
+      <button className='button'>Scroll</button>
     </div>
   );
 }
