@@ -16,6 +16,12 @@ function Project(props) {
 
         <h4 className='project-title mb-4'>{props.name}</h4>
         <p>{props.description}</p>
+        <div className='d-flex justify-content-between flex-wrap align-items-center'>
+          <p>{props.with1}</p>
+          <p>{props.with2}</p>
+          <p>{props.with3}</p>
+          <p>{props.with4}</p>
+        </div>
       </div>
 
       <div className='d-flex mb-3'>

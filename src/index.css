@@ -6,7 +6,6 @@
   --slate: #8892b0;
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
-  --green: #64ffda;
   --green-tint: rgba(100, 255, 218, 0.1);
   --pink: #f57dff;
   --blue: #57cbff;
@@ -94,7 +93,7 @@ h3 {
 
 .offcanvas {
   background-color: var(--light-navy) !important;
-  width: 80% !important;
+  width: 75% !important;
 }
 
 code {
@@ -172,7 +171,7 @@ h1 {
   background-color: transparent;
   border: 1px solid var(--green);
   border-radius: var(--border-radius);
-  padding: 1.2rem 2.75rem;
+  padding: 1.2rem 1.75rem;
   font-size: var(--fz-sm);
   font-family: var(--font-mono);
   line-height: 1;
@@ -412,6 +411,18 @@ input[type="text"]::after {
 .offcanvas-header {
   display: inline-block !important;
   padding: 20px 30px !important;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading {
+  height: 100px;
+  width: 100px;
 }
 
 /* Responsive */

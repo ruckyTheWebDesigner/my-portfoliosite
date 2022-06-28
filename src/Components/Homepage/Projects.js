@@ -3,6 +3,7 @@ import Projectsinfo from "./Projectsinfo";
 import { gsap } from "gsap";
 import { useRef, useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { motion } from "framer-motion";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,8 +12,6 @@ function Projects() {
   revealRefs.current = [];
 
   const addtoRefs = (el) => {
-    // revealref.current.push(element);
-    // console.log(element);
     if (el && !revealRefs.current.includes(el)) {
       revealRefs.current.push(el);
     }
@@ -35,7 +34,7 @@ function Projects() {
         }
       );
     });
-  }, [revealRefs]);
+  }, []);
 
   return (
     <>
@@ -47,19 +46,32 @@ function Projects() {
       </div>
 
       <div className='project-section'>
-        {Projectsinfo.map((project) => {
+        {Projectsinfo.map((project, index) => {
           return (
-            <div className='project-contents mb-2' ref={addtoRefs}>
+            <motion.div
+              className='project-contents mb-2'
+              ref={addtoRefs}
+              layout
+              whileTap={{ scale: 1.1 }}
+              whileHover={{
+                y: -10,
+                boxShadow: "10px rgba(0, 0, 0, 0.2)",
+                transition: { duration: 1 },
+              }}>
               <Project
-                key={project.toString()}
+                key={index}
                 value={project}
                 className='project-1'
                 url={project.url}
                 github={project.github}
                 name={project.name}
                 description={project.description}
+                with1={project.with[1]}
+                with2={project.with[2]}
+                with3={project.with[3]}
+                with4={project.with[4]}
               />
-            </div>
+            </motion.div>
           );
         })}
       </div>

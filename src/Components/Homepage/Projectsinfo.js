@@ -9,7 +9,7 @@ const Projectsinfo = [
       1: "React",
       2: "API",
       3: "Fetch",
-      5: "Styled Components",
+      4: "Styled Components",
     },
   },
 
@@ -47,9 +47,9 @@ const Projectsinfo = [
     github: "https://github.com/ruckyTheWebDesigner/Tours-app",
     url: "https://tours-app-nine.vercel.app/",
     with: {
-      1: "HTML",
-      2: "CSS",
-      3: "JavaScript",
+      1: "React",
+      2: "Styled Components",
+      3: "React-router-dom",
     },
   },
   {
@@ -59,9 +59,9 @@ const Projectsinfo = [
     github: "https://github.com/ruckyTheWebDesigner/darkmode-app",
     url: "https://darkmode-fzzpqqw32-ruckythewebdesigner.vercel.app/",
     with: {
-      1: "HTML",
-      2: "CSS",
-      3: "JavaScript",
+      1: "React",
+      2: "Styled Components",
+      3: "",
     },
   },
 ];

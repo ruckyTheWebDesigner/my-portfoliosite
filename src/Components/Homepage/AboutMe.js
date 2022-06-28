@@ -3,33 +3,56 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { MdPlayArrow } from "react-icons/md";
 import photo from "./Assets/photo.png";
-// import { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import { useRef, useEffect } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function AboutMe() {
+  const revealRefs = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      revealRefs.current,
+      { autoAlpha: 0 },
+      {
+        duration: 1,
+        autoAlpha: 1,
+        scrollTrigger: {
+          trigger: revealRefs.current,
+          start: "top center+=100",
+          end: "bottom bottom",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+  }, [revealRefs]);
+
   return (
     <div className='about-section' id='about-me'>
-      {/* <button onClick={executeScroll}>Click to scroll </button> */}
       <div
         className='abouttitle d-flex align-items-center line-through'
         id='#About'>
         <h6 className='green-text me-2'>01.</h6>
         <h4 className='about'>About Me</h4>
       </div>
-      <div className='about-content d-flex flex-column flex-md-row flex-lg-row'>
+      <div
+        className='about-content d-flex flex-column flex-md-row flex-lg-row'
+        ref={revealRefs}>
         <div className='about-body'>
           <p>
             Hello! My name is Rukewe and i enjoy creating things that live on
-            the internet, My instrest in web development started in 2019 when i
-            decided to try editing custom WordPress themes -- turns out to
-            become a passion i enjoy!
+            the internet, My instrest in web development started few years ago
+            when i decided to try editing custom WordPress themes -- turns out
+            to become a passion i enjoy!
           </p>
 
           <p>
-            Fast-forward to today, and I’ve had the privilege of working at an
-            advertising agency, a start-up, a huge corporation, and a
-            student-led design studio. My main focus these days is building
-            accessible, inclusive products and digital experiences at
-            Upstatement for a variety of clients.
+            Fast-forward to today, and I’ve had the privilege of working as a
+            freelancer on my leisure time and contributed to several open-source
+            projects. My main focus these days is solving day to day problems
+            with technology.
           </p>
 
           <p>
@@ -50,19 +73,27 @@ function AboutMe() {
                   <MdPlayArrow className='green-text me-1' />
                   <p>Node.js</p>
                 </div>
+                <div className='d-flex'>
+                  <MdPlayArrow className='green-text me-1' />
+                  <p>Git</p>
+                </div>
               </Col>
               <Col>
                 <div className='d-flex'>
                   <MdPlayArrow className='green-text me-1' />
-                  <p>Javascript (ES6+)</p>
+                  <p>Express JS</p>
                 </div>
                 <div className='d-flex'>
                   <MdPlayArrow className='green-text me-1' />
-                  <p>React JS</p>
+                  <p>API</p>
                 </div>
                 <div className='d-flex'>
                   <MdPlayArrow className='green-text me-1' />
-                  <p>Node.js</p>
+                  <p>Firebase</p>
+                </div>
+                <div className='d-flex'>
+                  <MdPlayArrow className='green-text me-1' />
+                  <p>MongoDB</p>
                 </div>
               </Col>
             </Row>

@@ -8,7 +8,10 @@ import logo from "./Assets/Logo.png";
 
 function scrollToSection(id) {
   const element = document.getElementById(id);
-  element.scrollIntoView({ behavior: "smooth" });
+  element.scrollIntoView({
+    behavior: "smooth",
+    block: "center",
+  });
 }
 
 function DesktopNav() {
@@ -27,14 +30,12 @@ function DesktopNav() {
         </Nav.Link>
         <Nav.Link
           className='d-flex nav-link me-3 align-items-center'
-          href='#action2'
           onClick={() => scrollToSection("projects")}>
           <h5 className='green-text'>02.</h5>
           <h4>Projects</h4>
         </Nav.Link>
         <Nav.Link
           className='d-flex nav-link me-4 align-items-center'
-          href='#action2'
           onClick={() => scrollToSection("contact-me")}>
           <h5 className='green-text'>03.</h5>
           <h4>Contact</h4>
@@ -54,7 +55,10 @@ function MobileNav() {
   function scrollToSection(id) {
     const element = document.getElementById(id);
     setShow(false);
-    element.scrollIntoView({ behavior: "smooth" });
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
   }
 
   return (
@@ -81,15 +85,11 @@ function MobileNav() {
               <h5 className='green-text'>01.</h5>
               <h4>About Me</h4>
             </Nav.Link>
-            <Nav.Link
-              href='#action2'
-              onClick={() => scrollToSection("projects")}>
+            <Nav.Link onClick={() => scrollToSection("projects")}>
               <h4 className='green-text'>02.</h4>
               <h4>Projects</h4>
             </Nav.Link>
-            <Nav.Link
-              href='#action2'
-              onClick={() => scrollToSection("contact-me")}>
+            <Nav.Link onClick={() => scrollToSection("contact-me")}>
               <h4 className='green-text'>03.</h4>
               <h4>Contact</h4>
             </Nav.Link>
@@ -103,7 +103,13 @@ function MobileNav() {
 }
 
 export default function BasicCard() {
-  const resolution = window.innerWidth;
+  const [resolution, setResolution] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", (event) => {
+      setResolution(event.target.innerWidth);
+    });
+  }, []);
 
   if (resolution > 768) {
     return <DesktopNav />;
