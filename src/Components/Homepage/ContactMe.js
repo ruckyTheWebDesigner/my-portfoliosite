@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Alert from "@mui/material/Alert";
 import Stack from "@mui/material/Stack";
@@ -6,6 +6,13 @@ import Stack from "@mui/material/Stack";
 function ContactMe() {
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [resolution, setResolution] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", (event) => {
+      setResolution(event.target.innerWidth);
+    });
+  }, [resolution]);
 
   const form = useRef();
   const handleSubmit = (e) => {
@@ -47,7 +54,15 @@ function ContactMe() {
           <h4>What's Next?</h4>
         </div>
         <h2>Get In Touch</h2>
-        <p className='get-in-touch'>
+        <p
+          className='get-in-touch'
+          style={
+            resolution > 1200
+              ? { padding: "2px 200px" }
+              : resolution > 680
+              ? { padding: "5px 50px" }
+              : { padding: "3px 40px" }
+          }>
           I'm open to new opportunities. Whether you have a question or just
           want to say hi.
         </p>

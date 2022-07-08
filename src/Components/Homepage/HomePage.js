@@ -8,7 +8,6 @@ import ContactMe from "./ContactMe";
 import Sidebar from "./Sidebar";
 import ResponsiveAppBar from "./NavBar";
 import Loading from "./loading";
-// import Testimonials from "./Testimonials";
 import Slider from "./Slider";
 
 function HomePage() {
@@ -33,8 +32,6 @@ function HomePage() {
             <Slider />
             <ContactMe />
             <Sidebar />
-
-            {/* <Testimonials /> */}
           </div>
         </>
       )}

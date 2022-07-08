@@ -390,7 +390,7 @@ input[type="text"]::after {
 .swiper-underline {
   color: var(--green) !important;
   width: 50%;
-  height: 2px;
+  height: 2px !important;
   margin: 15px auto !important;
 }
 
@@ -550,11 +550,6 @@ svg {
     font-weight: 600;
   }
 
-  .get-in-touch p {
-    padding-right: 200px;
-    padding-left: 200px;
-  }
-
   .others-section {
     grid-template-columns: repeat(3, 1fr);
     /* grid-template-columns: repeat(auto-fit, minmax(2, 1fr)); */
@@ -621,11 +616,6 @@ svg {
     font-size: clamp(40px, 5vw, 28px);
     color: var(--lightest-slate);
     font-weight: 600;
-  }
-
-  .get-in-touch p {
-    padding-right: 10px;
-    padding-left: 10px;
   }
 
   .logo {
