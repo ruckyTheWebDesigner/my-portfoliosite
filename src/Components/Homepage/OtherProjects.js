@@ -45,13 +45,12 @@ function OtherProjects() {
 
   return (
     <>
-      {" "}
       <h4 className='text-center others-heading'>Other Noteworthy Projects</h4>
       <h6 className='green-text text-center'>view the archive</h6>
       <div className='other-projects mt-5 others-section'>
         {OtherprojectsNotes.map((project, index) => {
           return (
-            <>
+            <React.Fragment key={index}>
               <motion.div
                 className=' project-contents other-projects mb-2'
                 ref={addtoRefs}
@@ -78,7 +77,7 @@ function OtherProjects() {
                   description3={project.with[3]}
                 />
               </motion.div>
-            </>
+            </React.Fragment>
           );
         })}
       </div>

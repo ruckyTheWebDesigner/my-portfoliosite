@@ -8,6 +8,8 @@ import ContactMe from "./ContactMe";
 import Sidebar from "./Sidebar";
 import ResponsiveAppBar from "./NavBar";
 import Loading from "./loading";
+// import Testimonials from "./Testimonials";
+import Slider from "./Slider";
 
 function HomePage() {
   const [loading, setLoading] = useState(true);
@@ -28,8 +30,11 @@ function HomePage() {
             <AboutMe className='gs_reveal' />
             <Projects />
             <OtherProjects />
+            <Slider />
             <ContactMe />
             <Sidebar />
+
+            {/* <Testimonials /> */}
           </div>
         </>
       )}

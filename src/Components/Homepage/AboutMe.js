@@ -30,12 +30,10 @@ function AboutMe() {
   }, [revealRefs]);
 
   return (
-    <div className='about-section' id='about-me'>
-      <div
-        className='abouttitle d-flex align-items-center line-through'
-        id='#About'>
+    <div className='about-section ' id='about-me'>
+      <div className='abouttitle d-flex align-items-center line' id='#About'>
         <h6 className='green-text me-2'>01.</h6>
-        <h4 className='about'>About Me</h4>
+        <h4 className='about'>About Us</h4>
       </div>
       <div
         className='about-content d-flex flex-column flex-md-row flex-lg-row'

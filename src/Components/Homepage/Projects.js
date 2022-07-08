@@ -38,9 +38,7 @@ function Projects() {
 
   return (
     <>
-      <div
-        className='abouttitle d-flex align-items-center line-through'
-        id='projects'>
+      <div className='abouttitle d-flex align-items-center line' id='projects'>
         <h6 className='green-text me-2'>02.</h6>
         <h4 className='about'>Some Things I've Built</h4>
       </div>
