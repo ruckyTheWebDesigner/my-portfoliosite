@@ -41,7 +41,7 @@ function AboutMe() {
         <div className='about-body'>
           <p>
             Hello! My name is Rukewe and i enjoy creating things that live on
-            the internet, My instrest in web development started few years ago
+            the internet, My interest in web development started few years ago
             when i decided to try editing custom WordPress themes -- turns out
             to become a passion i enjoy!
           </p>
@@ -50,7 +50,7 @@ function AboutMe() {
             Fast-forward to today, and I’ve had the privilege of working as a
             freelancer on my leisure time and contributed to several open-source
             projects. My main focus these days is solving day to day problems
-            with technology.
+            with modern technology.
           </p>
 
           <p>
