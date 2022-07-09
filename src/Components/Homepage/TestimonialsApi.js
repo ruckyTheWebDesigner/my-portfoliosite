@@ -47,7 +47,7 @@ const Testimonials = [
     image:
       "https://images.pexels.com/photos/38554/girl-people-landscape-sun-38554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     review:
-      "Gave me exactly what I asked for and everything that I didn't know that I needed! fantastic job!",
+      "Gave me exactly what I asked for and everything that I didn't know that I needed!",
   },
 ];
 
