@@ -98,10 +98,10 @@ function AboutMe() {
           </div>
         </div>
         <div>
-          <div class='container photo-content my-4'>
-            <div class='box red'></div>
-            <div class='box green'>
-              <img src={photo} alt='' srcset='' />
+          <div className='container photo-content my-4'>
+            <div className='box red'></div>
+            <div className='box green'>
+              <img src={photo} alt='' srcSet='' />
             </div>
           </div>
         </div>

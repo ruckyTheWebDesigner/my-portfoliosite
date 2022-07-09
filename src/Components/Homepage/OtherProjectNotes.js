@@ -1,6 +1,7 @@
 const Otherprojectsinfo = [
   {
     name: "Movie App",
+    id: 1,
     description:
       "A single web page to search and view movies infos with a search bar and a list of movies.",
     with: {
@@ -13,6 +14,7 @@ const Otherprojectsinfo = [
   },
   {
     name: "Password Generator",
+    id: 2,
     description:
       "A password generator app to generate random and unique passwords.",
     with: {
@@ -25,6 +27,7 @@ const Otherprojectsinfo = [
   },
   {
     name: "Testimonials UI",
+    id: 3,
     description:
       "A testimonial UI that display different users testimonials at set interval.",
     with: {
@@ -37,6 +40,7 @@ const Otherprojectsinfo = [
   },
   {
     name: "Dad Jokes Generator",
+    id: 4,
     description: "A simple UI app to generate random dad jokes.",
     with: {
       1: "HTML",

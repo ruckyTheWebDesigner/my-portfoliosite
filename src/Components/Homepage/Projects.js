@@ -44,9 +44,10 @@ function Projects() {
       </div>
 
       <div className='project-section'>
-        {Projectsinfo.map((project, index) => {
+        {Projectsinfo.map((project) => {
           return (
             <motion.div
+              key={project.id}
               className='project-contents mb-2'
               ref={addtoRefs}
               layout
@@ -57,7 +58,6 @@ function Projects() {
                 transition: { duration: 1 },
               }}>
               <Project
-                key={index}
                 value={project}
                 className='project-1'
                 url={project.url}

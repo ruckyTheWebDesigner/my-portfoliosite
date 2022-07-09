@@ -69,7 +69,7 @@ function ContactMe() {
       </div>
 
       <form
-        enctype='multipart/form-data'
+        encType='multipart/form-data'
         method='post'
         ref={form}
         onSubmit={handleSubmit}

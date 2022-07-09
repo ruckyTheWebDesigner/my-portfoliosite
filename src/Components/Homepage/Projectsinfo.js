@@ -1,6 +1,8 @@
 const Projectsinfo = [
   {
     name: "HSA news app",
+    id: 1,
+
     description:
       "HSA is a modern, easy to use, and easy to navigate news app. It enables readers to search for and read articles in a split-second. The app uses modern Web technologies like React, Redux, and API Fetch to build it's backend and frontend. ",
     github: "https://github.com/ruckyTheWebDesigner/hsanews-app",
@@ -15,6 +17,7 @@ const Projectsinfo = [
 
   {
     name: "Color Generator",
+    id: 2,
     description:
       "Trying to find the perfect color for your next project? A random color generator app will help you out! This app lets you generate random colors with a few clicks of a button. It's an easy way to get inspired with a splash of bright and bold colors that will surely inspire your next piece of art.",
     github: "https://github.com/ruckyTheWebDesigner/color-generator",
@@ -28,6 +31,7 @@ const Projectsinfo = [
 
   {
     name: "Real Estate app",
+    id: 3,
     description:
       "This is a full stack housing marketplace. users can register a profile and list their properties or explore available for rents, The frontend is powered by React and the backend by Firebase firestore.",
     github: "https://github.com/ruckyTheWebDesigner/house-marketplace",
@@ -42,6 +46,7 @@ const Projectsinfo = [
 
   {
     name: "Tours App",
+    id: 4,
     description:
       "Discover new places with this app that helps you to find the best tours built with React and Styled Components.",
     github: "https://github.com/ruckyTheWebDesigner/Tours-app",
@@ -54,6 +59,7 @@ const Projectsinfo = [
   },
   {
     name: "Dark Mode Landing Page",
+    id: 5,
     description:
       "This is a landing page with button to switch between light and dark mode for better user accessibility.",
     github: "https://github.com/ruckyTheWebDesigner/darkmode-app",

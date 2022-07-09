@@ -50,34 +50,33 @@ function OtherProjects() {
       <div className='other-projects mt-5 others-section'>
         {OtherprojectsNotes.map((project, index) => {
           return (
-            <React.Fragment key={index}>
-              <motion.div
-                className=' project-contents other-projects mb-2'
-                ref={addtoRefs}
-                whileHover={{
-                  y: -10,
-                  transition: { duration: 1 },
-                  boxShadow: "10px rgba(0, 0, 0, 0.2)",
-                }}
-                layout
-                whileTap={{ scale: 1.1 }}
-                onClick={() => openurl(project.url)}>
-                <OtherProject
-                  key={index}
-                  value={project}
-                  className=''
-                  github={project.github}
-                  url={project.url}
-                  name={project.name}
-                  title={project.title}
-                  subtitle={project.subtitle}
-                  description={project.description}
-                  description1={project.with[1]}
-                  description2={project.with[2]}
-                  description3={project.with[3]}
-                />
-              </motion.div>
-            </React.Fragment>
+            <motion.div
+              key={project.id}
+              className=' project-contents other-projects mb-2'
+              ref={addtoRefs}
+              whileHover={{
+                y: -10,
+                transition: { duration: 1 },
+                boxShadow: "10px rgba(0, 0, 0, 0.2)",
+              }}
+              layout
+              whileTap={{ scale: 1.1 }}
+              onClick={() => openurl(project.url)}>
+              <OtherProject
+                key={index}
+                value={project}
+                className=''
+                github={project.github}
+                url={project.url}
+                name={project.name}
+                title={project.title}
+                subtitle={project.subtitle}
+                description={project.description}
+                description1={project.with[1]}
+                description2={project.with[2]}
+                description3={project.with[3]}
+              />
+            </motion.div>
           );
         })}
       </div>

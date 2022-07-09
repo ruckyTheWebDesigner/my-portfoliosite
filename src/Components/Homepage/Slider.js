@@ -45,34 +45,32 @@ function Slider() {
         className='mySwiper'
         spaceBetween={30}
         slidesPerView={resolution > 1200 ? 3 : resolution > 680 ? 2 : 1}>
-        {reviews.map((review, index) => {
+        {reviews.map((review) => {
           return (
-            <div key={index}>
-              <SwiperSlide>
-                <div class='swiper-slide'>
-                  <blockquote class='p-8'>
-                    <div class='flex items-center'>
-                      <img
-                        src={review.image}
-                        alt=''
-                        class='object-cover w-16 h-16 rounded-full'
-                      />
+            <SwiperSlide key={review.id}>
+              <div className='swiper-slide'>
+                <blockquote className='p-8'>
+                  <div className='flex items-center'>
+                    <img
+                      src={review.image}
+                      alt=''
+                      className='object-cover w-16 h-16 rounded-full'
+                    />
 
-                      <div class='ml-4 text-sm'>
-                        <h6 class='font-bold'>{review.name}</h6>
-                        <p class='mt-1'>{review.location}</p>
-                      </div>
+                    <div className='ml-4 text-sm'>
+                      <h6 className='font-bold'>{review.name}</h6>
+                      <p className='mt-1'>{review.location}</p>
                     </div>
+                  </div>
 
-                    <p class='relative mt-4 text-gray-500'>
-                      <span class='text-xl'>&ldquo;</span>
-                      {review.review}
-                      <span class='text-xl'>&rdquo;</span>
-                    </p>
-                  </blockquote>
-                </div>
-              </SwiperSlide>
-            </div>
+                  <p className='relative mt-4 text-gray-500'>
+                    <span className='text-xl'>&ldquo;</span>
+                    {review.review}
+                    <span className='text-xl'>&rdquo;</span>
+                  </p>
+                </blockquote>
+              </div>
+            </SwiperSlide>
           );
         })}
       </Swiper>

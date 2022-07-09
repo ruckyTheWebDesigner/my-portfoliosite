@@ -22,7 +22,7 @@ function DesktopNav() {
   return (
     <div className='navbar-desktop d-flex justify-content-between'>
       <Link to='/'>
-        <img src={logo} className='green-text logo' alt='' srcset='' />
+        <img src={logo} className='green-text logo' alt='' srcSet='' />
       </Link>
 
       <div className='right-nav  d-flex justify-content-between align-items-center'>
@@ -71,7 +71,7 @@ function MobileNav() {
     <>
       <div className='navbar-mobile d-flex justify-content-between px-4 pt-4'>
         <Link to='/'>
-          <img src={logo} className='green-text logo' alt='' srcset='' />
+          <img src={logo} className='green-text logo' alt='' srcSet='' />
         </Link>
         <div className='left'>
           <BiMenuAltRight
