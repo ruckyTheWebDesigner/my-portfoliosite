@@ -60,7 +60,7 @@ function Slider() {
 
                       <div class='ml-4 text-sm'>
                         <h6 class='font-bold'>{review.name}</h6>
-                        <p class='mt-1'>{review.position}</p>
+                        <p class='mt-1'>{review.location}</p>
                       </div>
                     </div>
 

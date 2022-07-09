@@ -14,6 +14,10 @@ function scrollToSection(id) {
   });
 }
 
+const openPdf = () => {
+  window.open(process.env.PUBLIC_URL + "/resume.pdf");
+};
+
 function DesktopNav() {
   return (
     <div className='navbar-desktop d-flex justify-content-between'>
@@ -40,7 +44,9 @@ function DesktopNav() {
           <h5 className='green-text'>03.</h5>
           <h4>Contact</h4>
         </Nav.Link>
-        <button className='button btn-desktop '>Resume</button>
+        <button className='button btn-desktop' onClick={() => openPdf()}>
+          Resume
+        </button>
       </div>
     </div>
   );
@@ -94,7 +100,11 @@ function MobileNav() {
               <h4>Contact</h4>
             </Nav.Link>
 
-            <button className='button mt-4 py-3 mx-auto w-50'>Resume</button>
+            <button
+              className='button mt-4 py-3 mx-auto w-50'
+              onClick={() => openPdf()}>
+              Resume
+            </button>
           </div>
         </Offcanvas.Body>
       </Offcanvas>

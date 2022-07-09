@@ -1,52 +1,47 @@
 const Testimonials = [
   {
-    name: "Jeff Bezos",
-    position: "CEO of Shipping Company",
-    image: "https://www.hyperui.dev/photos/man-4.jpeg",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias dolores reiciendis vero voluptas libero, asperiores porro repellat, quas suscipit deleniti. Dolorem recusandae aperiam placeat, officiis natus optio hic expedita ea explicabo sed doloremque maiores inventore, exercitationem ipsam corporis blanditiis commodi?",
+    name: "Kellin L",
+    location: "Phoenix, AZ",
+    image: "https://images.pexels.com/photos/6283527/pexels-photo-6283527.jpeg",
+    review: "Very happy with the work and communication. I highly recommended.",
   },
   {
-    name: "Jeff Bezos",
-    position: "CEO of Shipping Company",
-    image: "https://www.hyperui.dev/photos/man-4.jpeg",
+    name: "John Doe",
+    location: "United states",
+    image:
+      "https://images.pexels.com/photos/1139743/pexels-photo-1139743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias dolores reiciendis vero voluptas libero, asperiores porro repellat, quas suscipit deleniti. Dolorem recusandae aperiam placeat, officiis natus optio hic expedita ea explicabo sed doloremque maiores inventore, exercitationem ipsam corporis blanditiis commodi?",
+      "Rukewe made it easy for someone like me to get exactly what I wanted.",
   },
   {
-    name: "Jeff Bezos",
-    position: "CEO of Shipping Company",
-    image: "https://www.hyperui.dev/photos/man-4.jpeg",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias dolores reiciendis vero voluptas libero, asperiores porro repellat, quas suscipit deleniti. Dolorem recusandae aperiam placeat, officiis natus optio hic expedita ea explicabo sed doloremque maiores inventore, exercitationem ipsam corporis blanditiis commodi?",
+    name: "Anna S",
+    location: "Sydney, Australia",
+    image:
+      "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    review: "Very professional design and quick fix on my business website",
   },
   {
-    name: "Jeff Bezos",
-    position: "CEO of Shipping Company",
+    name: "Jeffrey",
+    location: "Bahamas",
     image: "https://www.hyperui.dev/photos/man-4.jpeg",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias dolores reiciendis vero voluptas libero, asperiores porro repellat, quas suscipit deleniti. Dolorem recusandae aperiam placeat, officiis natus optio hic expedita ea explicabo sed doloremque maiores inventore, exercitationem ipsam corporis blanditiis commodi?",
+      "Another amazingly incredible website that blows my mind! Thank you Rukewe",
   },
   {
-    name: "Jeff Bezos",
-    position: "CEO of Shipping Company",
-    image: "https://www.hyperui.dev/photos/man-4.jpeg",
+    name: "Bernald",
+    location: "London",
+    image:
+      "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias dolores reiciendis vero voluptas libero, asperiores porro repellat, quas suscipit deleniti. Dolorem recusandae aperiam placeat, officiis natus optio hic expedita ea explicabo sed doloremque maiores inventore, exercitationem ipsam corporis blanditiis commodi?",
+      "I liked everything about my new website. I am very happy with the result, Thanks!",
   },
   {
-    name: "Jeff Bezos",
-    position: "CEO of Shipping Company",
-    image: "https://www.hyperui.dev/photos/man-4.jpeg",
+    name: "Teri Clarke",
+    location: "Denver, CO",
+    image:
+      "https://images.pexels.com/photos/38554/girl-people-landscape-sun-38554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias dolores reiciendis vero voluptas libero, asperiores porro repellat, quas suscipit deleniti. Dolorem recusandae aperiam placeat, officiis natus optio hic expedita ea explicabo sed doloremque maiores inventore, exercitationem ipsam corporis blanditiis commodi?",
-  },
-  {
-    name: "Jeff Bezos",
-    position: "CEO of Shipping Company",
-    image: "https://www.hyperui.dev/photos/man-4.jpeg",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias dolores reiciendis vero voluptas libero, asperiores porro repellat, quas suscipit deleniti. Dolorem recusandae aperiam placeat, officiis natus optio hic expedita ea explicabo sed doloremque maiores inventore, exercitationem ipsam corporis blanditiis commodi?",
+      "Gave me exactly what I asked for and everything that I didn't know that I needed! fantastic job!",
   },
 ];
 
