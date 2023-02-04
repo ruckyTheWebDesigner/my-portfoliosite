@@ -1,13 +1,9 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/api/article": "pages/api/article.js",
   "/_document": "pages/_document.js",
+  "/blogs": "pages/blogs.js",
   "/api/articles": "pages/api/articles.js",
-  "/api/hello": "pages/api/hello.js",
-  "/api/user": "pages/api/user.js",
-  "/blogs/[id]": "pages/blogs/[id].html",
-  "/blogs": "pages/blogs.html",
-  "/": "pages/index.html",
-  "/404": "pages/404.html"
+  "/blogs/[id]": "pages/blogs/[id].js",
+  "/api/article": "pages/api/article.js"
 }

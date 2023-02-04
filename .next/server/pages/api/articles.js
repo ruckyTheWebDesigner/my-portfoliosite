@@ -1,34 +1,35 @@
 "use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 100;
-exports.ids = [100];
+exports.id = "pages/api/articles";
+exports.ids = ["pages/api/articles"];
 exports.modules = {
 
-/***/ 893:
+/***/ "(api)/./pages/api/articles.ts":
+/*!*******************************!*\
+  !*** ./pages/api/articles.ts ***!
+  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ handler)
-/* harmony export */ });
-/* harmony import */ var _utils_articles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2636);
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ handler)\n/* harmony export */ });\n/* harmony import */ var _utils_articles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/articles */ \"(api)/./utils/articles.ts\");\n// Next.js API route support: https://nextjs.org/docs/api-routes/introduction\n\nasync function handler(req, res) {\n    const data = await (0,_utils_articles__WEBPACK_IMPORTED_MODULE_0__.fetchArticles)();\n    //   const parseBody = JSON.parse(req.body);\n    if (data) {\n        res.status(200).json({\n            article: data\n        });\n    } else {\n        res.status(400).json({\n            article: \"No article found\"\n        });\n    }\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9wYWdlcy9hcGkvYXJ0aWNsZXMudHMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQSw2RUFBNkU7QUFFeEI7QUFNdEMsZUFBZUMsUUFDNUJDLEdBQW1CLEVBQ25CQyxHQUEwQixFQUMxQjtJQUNBLE1BQU1DLE9BQU8sTUFBTUosOERBQWFBO0lBRWhDLDRDQUE0QztJQUM1QyxJQUFJSSxNQUFNO1FBQ1JELElBQUlFLE1BQU0sQ0FBQyxLQUFLQyxJQUFJLENBQUM7WUFBRUMsU0FBU0g7UUFBSztJQUN2QyxPQUFPO1FBQ0xELElBQUlFLE1BQU0sQ0FBQyxLQUFLQyxJQUFJLENBQUM7WUFBRUMsU0FBUztRQUFtQjtJQUNyRCxDQUFDO0FBQ0gsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3BvcnRmb2xpby1jbGllbnQvLi9wYWdlcy9hcGkvYXJ0aWNsZXMudHM/Mzg3YiJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBOZXh0LmpzIEFQSSByb3V0ZSBzdXBwb3J0OiBodHRwczovL25leHRqcy5vcmcvZG9jcy9hcGktcm91dGVzL2ludHJvZHVjdGlvblxuaW1wb3J0IHR5cGUgeyBOZXh0QXBpUmVxdWVzdCwgTmV4dEFwaVJlc3BvbnNlIH0gZnJvbSBcIm5leHRcIjtcbmltcG9ydCB7IGZldGNoQXJ0aWNsZXMgfSBmcm9tIFwiLi4vLi4vdXRpbHMvYXJ0aWNsZXNcIjtcblxudHlwZSBEYXRhID0ge1xuICBhcnRpY2xlOiBhbnk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBhc3luYyBmdW5jdGlvbiBoYW5kbGVyKFxuICByZXE6IE5leHRBcGlSZXF1ZXN0LFxuICByZXM6IE5leHRBcGlSZXNwb25zZTxEYXRhPlxuKSB7XG4gIGNvbnN0IGRhdGEgPSBhd2FpdCBmZXRjaEFydGljbGVzKCk7XG5cbiAgLy8gICBjb25zdCBwYXJzZUJvZHkgPSBKU09OLnBhcnNlKHJlcS5ib2R5KTtcbiAgaWYgKGRhdGEpIHtcbiAgICByZXMuc3RhdHVzKDIwMCkuanNvbih7IGFydGljbGU6IGRhdGEgfSk7XG4gIH0gZWxzZSB7XG4gICAgcmVzLnN0YXR1cyg0MDApLmpzb24oeyBhcnRpY2xlOiBcIk5vIGFydGljbGUgZm91bmRcIiB9KTtcbiAgfVxufVxuIl0sIm5hbWVzIjpbImZldGNoQXJ0aWNsZXMiLCJoYW5kbGVyIiwicmVxIiwicmVzIiwiZGF0YSIsInN0YXR1cyIsImpzb24iLCJhcnRpY2xlIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./pages/api/articles.ts\n");
 
-async function handler(req, res) {
-    const data = await (0,_utils_articles__WEBPACK_IMPORTED_MODULE_0__/* .fetchArticles */ .Z)();
-    //   const parseBody = JSON.parse(req.body);
-    if (data) {
-        res.status(200).json({
-            article: data
-        });
-    } else {
-        res.status(400).json({
-            article: "No article found"
-        });
-    }
-}
+/***/ }),
 
+/***/ "(api)/./utils/articles.ts":
+/*!***************************!*\
+  !*** ./utils/articles.ts ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"fetchArticle\": () => (/* binding */ fetchArticle),\n/* harmony export */   \"fetchArticles\": () => (/* binding */ fetchArticles)\n/* harmony export */ });\nconst endpoint = \"https://api.hashnode.com/\";\nconst ARTICLE_QUERY = `\n  {\n    user(username: \"rukewe\") {\n      publication {\n        posts(page: 0) {\n            _id\n            title\n            brief\n            slug\n            followersCount\n            dateAdded\n            coverImage\n            contentMarkdown\n        }\n      }\n    }\n  }\n\n`;\nconst fetchArticles = async ()=>{\n    const response = await fetch(endpoint, {\n        method: \"POST\",\n        headers: {\n            \"Content-Type\": \"application/json\"\n        },\n        body: JSON.stringify({\n            query: ARTICLE_QUERY\n        })\n    });\n    const data = await response.json();\n    return data;\n};\nconst apiKey = \"7df95377-352a-4181-8e01-08e6833f82c6\";\nconst fetchArticle = async (slug)=>{\n    const ARTICLE_QUERY_BY_SLUG = `\n{\n  post(slug: \"${slug}\", hostname: \"sleektechnology.hashnode.dev\") {\n    sourcedFromGithub\n    _id\n    isRepublished\n    followersCount\n    cuid\n    slug\n    title\n    type\n    partOfPublication\n    dateUpdated\n    totalReactions\n    numCollapsed\n    isDelisted\n    isFeatured\n    isActive\n    replyCount\n    responseCount\n    popularity\n    dateAdded\n    contentMarkdown\n    content\n    brief\n    coverImage\n    isAnonymous\n    tags {\n      name\n    }\n    reactions {\n      reaction {\n        image\n        name\n      }\n      count\n    }\n    responses(page: 0) {\n      popularity\n      totalReactions\n      replies {\n        content\n        dateAdded\n      }\n    }\n  }\n}\n`;\n    const response = await fetch(endpoint, {\n        method: \"POST\",\n        headers: {\n            \"Content-Type\": \"application/json\",\n            //   authorization: `Bearer ${process.env.HASHNODE_API_KEY}`,\n            Authorization: `Bearer ${apiKey}`\n        },\n        body: JSON.stringify({\n            query: ARTICLE_QUERY_BY_SLUG\n        })\n    });\n    const data = await response.json();\n    return data;\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi91dGlscy9hcnRpY2xlcy50cy5qcyIsIm1hcHBpbmdzIjoiOzs7OztBQUFBLE1BQU1BLFdBQVc7QUFDakIsTUFBTUMsZ0JBQWdCLENBQUM7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQWtCdkIsQ0FBQztBQUVNLE1BQU1DLGdCQUFnQixVQUFZO0lBQ3ZDLE1BQU1DLFdBQVcsTUFBTUMsTUFBTUosVUFBVTtRQUNyQ0ssUUFBUTtRQUNSQyxTQUFTO1lBQ1AsZ0JBQWdCO1FBRWxCO1FBQ0FDLE1BQU1DLEtBQUtDLFNBQVMsQ0FBQztZQUNuQkMsT0FBT1Q7UUFDVDtJQUNGO0lBRUEsTUFBTVUsT0FBTyxNQUFNUixTQUFTUyxJQUFJO0lBRWhDLE9BQU9EO0FBQ1QsRUFBRTtBQUVGLE1BQU1FLFNBQVM7QUFFUixNQUFNQyxlQUFlLE9BQU9DLE9BQWlCO0lBQ2xELE1BQU1DLHdCQUF3QixDQUFDOztjQUVuQixFQUFFRCxLQUFLOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUE2Q3JCLENBQUM7SUFFQyxNQUFNWixXQUFXLE1BQU1DLE1BQU1KLFVBQVU7UUFDckNLLFFBQVE7UUFDUkMsU0FBUztZQUNQLGdCQUFnQjtZQUNoQiw2REFBNkQ7WUFDN0RXLGVBQWUsQ0FBQyxPQUFPLEVBQUVKLE9BQU8sQ0FBQztRQUNuQztRQUNBTixNQUFNQyxLQUFLQyxTQUFTLENBQUM7WUFBRUMsT0FBT007UUFBc0I7SUFDdEQ7SUFFQSxNQUFNTCxPQUFPLE1BQU1SLFNBQVNTLElBQUk7SUFFaEMsT0FBT0Q7QUFDVCxFQUFFIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vcG9ydGZvbGlvLWNsaWVudC8uL3V0aWxzL2FydGljbGVzLnRzPzU3YWUiXSwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgZW5kcG9pbnQgPSBcImh0dHBzOi8vYXBpLmhhc2hub2RlLmNvbS9cIjtcbmNvbnN0IEFSVElDTEVfUVVFUlkgPSBgXG4gIHtcbiAgICB1c2VyKHVzZXJuYW1lOiBcInJ1a2V3ZVwiKSB7XG4gICAgICBwdWJsaWNhdGlvbiB7XG4gICAgICAgIHBvc3RzKHBhZ2U6IDApIHtcbiAgICAgICAgICAgIF9pZFxuICAgICAgICAgICAgdGl0bGVcbiAgICAgICAgICAgIGJyaWVmXG4gICAgICAgICAgICBzbHVnXG4gICAgICAgICAgICBmb2xsb3dlcnNDb3VudFxuICAgICAgICAgICAgZGF0ZUFkZGVkXG4gICAgICAgICAgICBjb3ZlckltYWdlXG4gICAgICAgICAgICBjb250ZW50TWFya2Rvd25cbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxuXG5gO1xuXG5leHBvcnQgY29uc3QgZmV0Y2hBcnRpY2xlcyA9IGFzeW5jICgpID0+IHtcbiAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaChlbmRwb2ludCwge1xuICAgIG1ldGhvZDogXCJQT1NUXCIsXG4gICAgaGVhZGVyczoge1xuICAgICAgXCJDb250ZW50LVR5cGVcIjogXCJhcHBsaWNhdGlvbi9qc29uXCIsXG4gICAgICAvLyAgIGF1dGhvcml6YXRpb246IGBCZWFyZXIgJHtwcm9jZXNzLmVudi5IQVNITk9ERV9BUElfS0VZfWAsXG4gICAgfSxcbiAgICBib2R5OiBKU09OLnN0cmluZ2lmeSh7XG4gICAgICBxdWVyeTogQVJUSUNMRV9RVUVSWSxcbiAgICB9KSxcbiAgfSk7XG5cbiAgY29uc3QgZGF0YSA9IGF3YWl0IHJlc3BvbnNlLmpzb24oKTtcblxuICByZXR1cm4gZGF0YTtcbn07XG5cbmNvbnN0IGFwaUtleSA9IFwiN2RmOTUzNzctMzUyYS00MTgxLThlMDEtMDhlNjgzM2Y4MmM2XCI7XG5cbmV4cG9ydCBjb25zdCBmZXRjaEFydGljbGUgPSBhc3luYyAoc2x1Zzogc3RyaW5nKSA9PiB7XG4gIGNvbnN0IEFSVElDTEVfUVVFUllfQllfU0xVRyA9IGBcbntcbiAgcG9zdChzbHVnOiBcIiR7c2x1Z31cIiwgaG9zdG5hbWU6IFwic2xlZWt0ZWNobm9sb2d5Lmhhc2hub2RlLmRldlwiKSB7XG4gICAgc291cmNlZEZyb21HaXRodWJcbiAgICBfaWRcbiAgICBpc1JlcHVibGlzaGVkXG4gICAgZm9sbG93ZXJzQ291bnRcbiAgICBjdWlkXG4gICAgc2x1Z1xuICAgIHRpdGxlXG4gICAgdHlwZVxuICAgIHBhcnRPZlB1YmxpY2F0aW9uXG4gICAgZGF0ZVVwZGF0ZWRcbiAgICB0b3RhbFJlYWN0aW9uc1xuICAgIG51bUNvbGxhcHNlZFxuICAgIGlzRGVsaXN0ZWRcbiAgICBpc0ZlYXR1cmVkXG4gICAgaXNBY3RpdmVcbiAgICByZXBseUNvdW50XG4gICAgcmVzcG9uc2VDb3VudFxuICAgIHBvcHVsYXJpdHlcbiAgICBkYXRlQWRkZWRcbiAgICBjb250ZW50TWFya2Rvd25cbiAgICBjb250ZW50XG4gICAgYnJpZWZcbiAgICBjb3ZlckltYWdlXG4gICAgaXNBbm9ueW1vdXNcbiAgICB0YWdzIHtcbiAgICAgIG5hbWVcbiAgICB9XG4gICAgcmVhY3Rpb25zIHtcbiAgICAgIHJlYWN0aW9uIHtcbiAgICAgICAgaW1hZ2VcbiAgICAgICAgbmFtZVxuICAgICAgfVxuICAgICAgY291bnRcbiAgICB9XG4gICAgcmVzcG9uc2VzKHBhZ2U6IDApIHtcbiAgICAgIHBvcHVsYXJpdHlcbiAgICAgIHRvdGFsUmVhY3Rpb25zXG4gICAgICByZXBsaWVzIHtcbiAgICAgICAgY29udGVudFxuICAgICAgICBkYXRlQWRkZWRcbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbmA7XG5cbiAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaChlbmRwb2ludCwge1xuICAgIG1ldGhvZDogXCJQT1NUXCIsXG4gICAgaGVhZGVyczoge1xuICAgICAgXCJDb250ZW50LVR5cGVcIjogXCJhcHBsaWNhdGlvbi9qc29uXCIsXG4gICAgICAvLyAgIGF1dGhvcml6YXRpb246IGBCZWFyZXIgJHtwcm9jZXNzLmVudi5IQVNITk9ERV9BUElfS0VZfWAsXG4gICAgICBBdXRob3JpemF0aW9uOiBgQmVhcmVyICR7YXBpS2V5fWAsXG4gICAgfSxcbiAgICBib2R5OiBKU09OLnN0cmluZ2lmeSh7IHF1ZXJ5OiBBUlRJQ0xFX1FVRVJZX0JZX1NMVUcgfSksXG4gIH0pO1xuXG4gIGNvbnN0IGRhdGEgPSBhd2FpdCByZXNwb25zZS5qc29uKCk7XG5cbiAgcmV0dXJuIGRhdGE7XG59O1xuIl0sIm5hbWVzIjpbImVuZHBvaW50IiwiQVJUSUNMRV9RVUVSWSIsImZldGNoQXJ0aWNsZXMiLCJyZXNwb25zZSIsImZldGNoIiwibWV0aG9kIiwiaGVhZGVycyIsImJvZHkiLCJKU09OIiwic3RyaW5naWZ5IiwicXVlcnkiLCJkYXRhIiwianNvbiIsImFwaUtleSIsImZldGNoQXJ0aWNsZSIsInNsdWciLCJBUlRJQ0xFX1FVRVJZX0JZX1NMVUciLCJBdXRob3JpemF0aW9uIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(api)/./utils/articles.ts\n");
 
 /***/ })
 
@@ -39,7 +40,7 @@ async function handler(req, res) {
 var __webpack_require__ = require("../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [636], () => (__webpack_exec__(893)));
+var __webpack_exports__ = (__webpack_exec__("(api)/./pages/api/articles.ts"));
 module.exports = __webpack_exports__;
 
 })();

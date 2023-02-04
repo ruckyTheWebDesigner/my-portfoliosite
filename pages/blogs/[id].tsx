@@ -4,9 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useRouter } from "next/router";
 import React from "react";
 import NavBar from "../../components/shared/NavBar";
-import { Skeleton } from "@mantine/core";
 import { Loader } from "@mantine/core";
-import { fetchArticle } from "../../utils/articles";
 
 import MoreArticles from "../../components/blog/MoreArticles";
 import Author from "../../components/blog/Author";
@@ -18,7 +16,7 @@ function Blog() {
   const { data, isLoading } = useQuery({
     queryKey: ["article", id],
     queryFn: async () => {
-      const response = await fetch(`http://localhost:3000/api/article`, {
+      const response = await fetch(`/api/article`, {
         method: "POST",
         body: JSON.stringify(id),
         headers: {

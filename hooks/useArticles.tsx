@@ -5,7 +5,7 @@ function useArticles() {
   const { data, isLoading } = useQuery({
     queryKey: ["articles"],
     queryFn: async () => {
-      const response = await fetch("http://localhost:3000/api/articles");
+      const response = await fetch("/api/articles");
       const data = await response.json();
 
       const {
