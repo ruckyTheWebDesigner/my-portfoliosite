@@ -7,6 +7,8 @@ import ContactMe from "./ContactMe";
 import Sidebar from "./Sidebar";
 import Loading from "./loading";
 import Slider from "./Slider";
+import NavBar from "../shared/NavBar";
+import { Container } from "@mantine/core";
 
 function HomePage() {
   const [loading, setLoading] = useState(true);
@@ -16,15 +18,18 @@ function HomePage() {
   }, []);
 
   return (
-    <div className='homepage-body'>
-      <Hero />
-      <AboutMe className='gs_reveal' />
-      <Projects />
-      <OtherProjects />
-      <Slider />
-      <ContactMe />
-      <Sidebar />
-    </div>
+    <>
+      <NavBar />
+      <Container size={"md"}>
+        <Hero />
+        <AboutMe className='gs_reveal' />
+        <Projects />
+        <OtherProjects />
+        <Slider />
+        <ContactMe />
+        <Sidebar />
+      </Container>
+    </>
   );
 }
 
