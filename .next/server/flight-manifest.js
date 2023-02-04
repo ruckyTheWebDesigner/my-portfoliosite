@@ -1,12 +1,1 @@
-self.__RSC_MANIFEST={
-  "__ssr_module_mapping__": {},
-  "__edge_ssr_module_mapping__": {},
-  "__entry_css_files__": {},
-  "/Users/ryempire/Documents/projects/my-portfoliosite/styles/globals.css": {
-    "default": {
-      "id": "./styles/globals.css",
-      "name": "default",
-      "chunks": []
-    }
-  }
-}
+self.__RSC_MANIFEST={"__ssr_module_mapping__":{},"__edge_ssr_module_mapping__":{},"__entry_css_files__":{},"/Users/ryempire/Documents/projects/my-portfoliosite/styles/globals.css":{"default":{"id":"7190","name":"default","chunks":["static/css/484ee8509568497d.css"]}},"/Users/ryempire/Documents/projects/my-portfoliosite/node_modules/swiper/swiper.min.css":{"default":{"id":"6436","name":"default","chunks":["static/css/6ec9b6e4f7f1b49b.css"]}},"/Users/ryempire/Documents/projects/my-portfoliosite/assets/photo.png":{"":{"id":"6492","name":"","chunks":["228:252f366e-543815f05abffe14","617:d7eeaac4-3fb23dc88a509fcf","727:727-f8f850afecf042ce","38:38-1293a09e17f3d928","405:pages/index-c389cecfb9ade81b"],"async":false},"*":{"id":"6492","name":"*","chunks":["228:252f366e-543815f05abffe14","617:d7eeaac4-3fb23dc88a509fcf","727:727-f8f850afecf042ce","38:38-1293a09e17f3d928","405:pages/index-c389cecfb9ade81b"],"async":false},"default":{"id":"6492","name":"default","chunks":["228:252f366e-543815f05abffe14","617:d7eeaac4-3fb23dc88a509fcf","727:727-f8f850afecf042ce","38:38-1293a09e17f3d928","405:pages/index-c389cecfb9ade81b"],"async":false}}}
